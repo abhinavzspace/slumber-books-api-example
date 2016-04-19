@@ -1,11 +1,11 @@
 package books
 
 import (
-	. "github.com/sogko/slumber-books-api-example/books/domain"
-	"github.com/sogko/slumber/domain"
+	. "github.com/abhinavzspace/slumber-books-api-example/books/domain"
+	"github.com/abhinavzspace/slumber/domain"
 	"net/http"
-	"github.com/sogko/slumber/middlewares/mongodb"
-	"github.com/sogko/slumber/middlewares/renderer"
+	"github.com/abhinavzspace/slumber/middlewares/mongodb"
+	"github.com/abhinavzspace/slumber/middlewares/renderer"
 )
 
 type Options struct {}

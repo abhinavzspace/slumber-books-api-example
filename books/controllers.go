@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
-	. "github.com/sogko/slumber-books-api-example/books/domain"
+	. "github.com/abhinavzspace/slumber-books-api-example/books/domain"
 	"gopkg.in/mgo.v2/bson"
 	"net/http"
 )

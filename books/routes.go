@@ -1,7 +1,7 @@
 package books
 
 import (
-	"github.com/sogko/slumber/domain"
+	"github.com/abhinavzspace/slumber/domain"
 )
 
 const (

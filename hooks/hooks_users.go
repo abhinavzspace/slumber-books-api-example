@@ -3,7 +3,7 @@ package hooks
 import (
 	"errors"
 	"fmt"
-	"github.com/sogko/slumber-users"
+	"github.com/abhinavzspace/slumber-users"
 	"log"
 	"net/http"
 )

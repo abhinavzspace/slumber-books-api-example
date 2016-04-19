@@ -3,14 +3,14 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/sogko/slumber-books-api-example/books"
-	"github.com/sogko/slumber-books-api-example/hooks"
-	"github.com/sogko/slumber-sessions"
-	"github.com/sogko/slumber-users"
-	"github.com/sogko/slumber/middlewares/context"
-	"github.com/sogko/slumber/middlewares/mongodb"
-	"github.com/sogko/slumber/middlewares/renderer"
-	"github.com/sogko/slumber/server"
+	"github.com/abhinavzspace/slumber-books-api-example/books"
+	"github.com/abhinavzspace/slumber-books-api-example/hooks"
+	"github.com/abhinavzspace/slumber-sessions"
+	"github.com/abhinavzspace/slumber-users"
+	"github.com/abhinavzspace/slumber/middlewares/context"
+	"github.com/abhinavzspace/slumber/middlewares/mongodb"
+	"github.com/abhinavzspace/slumber/middlewares/renderer"
+	"github.com/abhinavzspace/slumber/server"
 	"io/ioutil"
 	"time"
 )
@@ -90,5 +90,7 @@ func main() {
 	s.UseRouter(router)
 
 	// bam!
-	s.Run(":3001", 10*time.Second)
+	s.Run(":3001", server.Options{
+		Timeout: 10*time.Second,
+	})
 }

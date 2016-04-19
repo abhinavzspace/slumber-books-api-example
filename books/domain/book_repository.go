@@ -3,7 +3,7 @@ package books
 import (
 	"errors"
 	"fmt"
-	"github.com/sogko/slumber/domain"
+	"github.com/abhinavzspace/slumber/domain"
 	"gopkg.in/mgo.v2/bson"
 	"time"
 )
